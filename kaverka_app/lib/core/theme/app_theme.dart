@@ -21,6 +21,10 @@ class AppTheme {
   const AppTheme._();
 
   static final lightTheme = ThemeData(
+      scaffoldBackgroundColor: lightBackgroundColor,
+      appBarTheme:
+          AppBarTheme(backgroundColor: lightPrimaryColor, centerTitle: true),
+      fontFamily: "Poppins",
       brightness: Brightness.light,
       primaryColor: lightPrimaryColor,
       backgroundColor: lightBackgroundColor,
@@ -28,6 +32,10 @@ class AppTheme {
       visualDensity: VisualDensity.adaptivePlatformDensity);
 
   static final darkTheme = ThemeData(
+      scaffoldBackgroundColor: darkBackgroundColor,
+      appBarTheme:
+          AppBarTheme(backgroundColor: darkParticlesColor, centerTitle: true),
+      fontFamily: "Poppins",
       brightness: Brightness.dark,
       primaryColor: darkPrimaryColor,
       textTheme: _darkTextTheme,
